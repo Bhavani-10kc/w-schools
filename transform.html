@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+     body{
+            margin:5px;
+          
+          }  
+        .container{  
+            margin:0; 
+            width: 400px; 
+            height: 250px;
+            border:5px solid;
+            text-align:center; 
+            background-color:rgb(17, 153, 212);
+             position: absolute;
+            border-radius:30px;
+            box-shadow:10px 5px 3px 3px rgb(190, 35, 179);
+             } 
+        button {
+            background-color:rgb(235, 95, 31);
+            color: rgb(22, 201, 141);
+            margin:5px;
+            width:65px;
+            height:40px;
+            box-shadow:5px 3px 1px white;
+            border-radius:50px;
+        }
+        .container > .one:hover ~ img{
+            transform:TranslateX(100%);
+            transition: all 5s ease-in-out;
+            transition-delay:2s;
+        }
+        .container > .two:hover ~ img{
+            transform: rotate(4000deg);
+            transition: all 4s ease-in-out;
+            
+        }
+        .container > .three:hover ~ img{
+            transform: Scale(2);
+            transition: all 3s ease-in-out;
+        }
+        .container > .four:hover ~ img{
+            transform: Skew(4000deg);
+            transition: all 2s ease-in-out;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="one">Translate</button>
+        <button class="two">rotate</button>
+        <button class="three">Scale</button>
+        <button class="four">Skew</button><br>
+        <hr>
+        <img src="https://cdn-icons-png.flaticon.com/128/1828/1828970.png" alt="" width="100px" id="star">
+    </div>
+</body>
+</html>
